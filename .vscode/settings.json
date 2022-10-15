@@ -94,5 +94,6 @@
         "io_context": "cpp",
         "netfwd": "cpp"
     },
-    "cmake.buildTask": true
+    "cmake.buildTask": true,
+    "cmake.configureOnOpen": true
 }
