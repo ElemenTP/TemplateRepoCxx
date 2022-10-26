@@ -12,10 +12,10 @@ endif()
 if (CMAKE_BUILD_TYPE MATCHES Debug)
     add_compile_options(-fsanitize=address)
     add_link_options(-fsanitize=address)
+else()
+    add_compile_options(-flto)
+    add_link_options(-flto)
 endif()
-
-add_compile_options(-flto)
-add_link_options(-flto)
 
 project(my_project_name VERSION 0.0.1 LANGUAGES C CXX)
 
