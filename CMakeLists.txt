@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.20.0)
 
+project(my_project_name VERSION 0.0.1 LANGUAGES C CXX)
+
 set(CMAKE_CXX_STANDARD 17)
 # set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_C_STANDARD 11)
@@ -17,12 +19,10 @@ else()
     add_link_options(-flto)
 endif()
 
-project(my_project_name VERSION 0.0.1 LANGUAGES C CXX)
-
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_subdirectory(./src)
 
-add_subdirectory(./test)
+# add_subdirectory(./test)
 
-add_subdirectory(./example)
+# add_subdirectory(./example)
