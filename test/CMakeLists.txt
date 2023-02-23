@@ -1,5 +1,5 @@
 # for each "test/x.cpp", generate target "x"
-file(GLOB_RECURSE all_tests *.cpp)
+file(GLOB_RECURSE all_tests *.cpp *.cxx *.cc *.c)
 foreach(v ${all_tests})
     string(REGEX MATCH "test/.*" relative_path ${v})
     # message(${relative_path})
