@@ -92,8 +92,7 @@
         "forward_list": "cpp",
         "executor": "cpp",
         "io_context": "cpp",
-        "netfwd": "cpp"
+        "netfwd": "cpp",
     },
-    "cmake.buildTask": true,
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
 }
